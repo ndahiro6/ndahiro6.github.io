@@ -21,14 +21,15 @@
 					<header id="header" class="alt">
 						
 						<h1>Stella's Portfolio</h1>
-						<p>Sports Analytics, Data Science and Computer Vision<br />
-						 <a href="https://www.linkedin.com/in/stella-ineza-ndahiro-02b9431b7/">@stellandahiro</a> 
+						<p>Software Engineering, Sports Analytics, Data Science, and Computer Vision<br />
+						 <a href="https://www.linkedin.com/in/stella-ineza-ndahiro-02b9431b7/" target="_blank" rel="noopener noreferrer">@stellandahiro</a> 
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#basketball">Basketball Stats App</a></li>
 							<li><a href="#first">Sports Analytics</a></li>
 							<li><a href="#second">Data Science</a></li>
 							
@@ -38,17 +39,18 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Introduction -->
-						<section id="intro" class="main">
+					<!-- Introduction -->
+					<section id="intro" class="main">
 							<div class="spotlight">
 								<div class="content">
 									<header class="major">
 										<h2>A little bit about me...</h2>
 									</header>
 									<p>
-										I am a sports enthusiast who earned a Bachelor’s degree at Johns Hopkins University majoring in Chemical & Biomolecular Engineering. 
-										I also minored in Applied Mathematics & Statistics with a focus area on Data Science. 
-										My undergraduate research experience was on using Python Open CV to track the position of lacrosse players on the field.
+										I am a sports enthusiast with one year of experience in sports tech software engineering and data science.
+										I earned a Bachelor’s degree from Johns Hopkins University in Chemical & Biomolecular Engineering and minored in Applied Mathematics & Statistics with a focus in Data Science.
+										Recently, I built computer vision and analytics models for football and lacrosse—such as a quarterback dropback detector and game-level athleticism metrics using clustering and Bayesian methods.
+										On the engineering side, I developed high‑performance data pipelines and APIs with FastAPI, PostgreSQL, and Polars, and shipped microservices with Docker, Kubernetes, and Redis for wearable‑data integrations.
 									</p>
 									<ul class="actions">
 									</ul>
@@ -56,6 +58,22 @@
 								<span class="image"><img src="images/PROFILE.jpg" alt="" /></span>
 							</div>
 						</section>
+
+					<!-- Basketball Stats App -->
+					<section id="basketball" class="main special">
+						<header class="major">
+							<h2>Basketball Stats App</h2>
+						</header>
+						<p>
+							A work-in-progress personal app to track and compare player statistics. The backend is written in Python using FastAPI for a fast, typed web API, SQLAlchemy for ORM models, and Alembic for database migrations. PostgreSQL is the primary datastore, with Docker and pgAdmin used to run and manage a reliable local environment. The frontend is built with React and TypeScript to enable a type-safe, component-driven UI. The repo also includes backend tests and helper scripts for local startup.
+						</p>
+						<p><strong>Status:</strong> In progress — not yet completed.</p>
+						<footer class="major">
+							<ul class="actions special">
+								<li><a href="https://github.com/ndahiro6/basketball-stats" class="button" target="_blank" rel="noopener noreferrer">View Repo</a></li>
+							</ul>
+						</footer>
+					</section>
 
 						<!-- First Section -->
 						<section id="first" class="main special">
@@ -67,7 +85,7 @@
 									<span class="icon solid major style1 fa-code"></span>
 									<h3>Pose Detection</h3>
 									<p>
-										In this project I use MediaPipe Pose and YOLOV7 to identify and tracks limbs of a lacrosse draw taker in
+										In this project I use MediaPipe Pose and YOLOv7 to identify and track the limbs of a lacrosse draw taker in
 										3D space.
 									</p>
 
@@ -76,7 +94,7 @@
 									<span class="icon solid major style1 fa-code"></span>
 									<h3>Player Position Tracking</h3>
 									<p>
-										Used YOLOV7 to detect and track position of lacrosse players on the field as a function of time.
+										Used YOLOv7 to detect and track the positions of lacrosse players on the field over time.
 									</p>
 
 								</li>
@@ -85,7 +103,7 @@
 									<span class="icon major style5 fa-gem"></span>
 									<h3>Linear Regression with Bayesian Statistics</h3>
 									<p>
-									Made predictive stats through Bayesian linear regression that highlighted turnovers to have most impact on chances of winning for a D1 Women's Lacrosse team.
+										Built predictive models using Bayesian linear regression showing that turnovers had the greatest impact on the probability of winning for a D1 women's lacrosse team.
 									</p>
 								</li>
 							</ul>
@@ -109,7 +127,7 @@
 
 							<footer class="major">
 								<ul class="actions special">
-									<li><a href="https://github.com/ndahiro6/MyRepository/tree/main/Sports%20Analytics" class="button">View Projects</a></li>
+									<li><a href="https://github.com/ndahiro6/MyRepository/tree/main/Sports%20Analytics" class="button" target="_blank" rel="noopener noreferrer">View Projects</a></li>
 								</ul>
 							</footer>
 
@@ -124,17 +142,17 @@
 							<ul class="features">
 								<li>
 									<span class="icon major style3 fa-copy"></span>
-									<h3>Reinforcement Learing</h3>
+									<h3>Reinforcement Learning</h3>
 									<p>
-										Here I used MCMC to find an optimum policy for solving a 4 by 4 grid.
+										Used MCMC to find an optimal policy for solving a 4×4 grid.
 									</p>
 								</li>
 								<li>
 									<span class="icon solid major style3 fa-code"></span>
 									<h3>Parameter Inference</h3>
 									<p>
-										In this project, my classmate and I used Bayesian Inference to determine two unkown parameters of a physical
-										system through MCMC sampling method.
+										In this project, my classmate and I used Bayesian inference to estimate two unknown parameters of a physical
+										system using an MCMC sampling method.
 									</p>
 								</li>
 
@@ -142,8 +160,8 @@
 							</ul>
 							<footer class="major">
 								<ul class="actions special">
-									<li><a href="https://github.com/ndahiro6/MyRepository/tree/main/Data%20Science" class="button">View Project</a></li>	
-									<li><a href="https://github.com/ndahiro6/MyRepository/blob/main/Stats%20Analysis%20w%20Python/Final%20Exam%20Part%201.ipynb" class="button">View Project</a></li>
+									<li><a href="https://github.com/ndahiro6/MyRepository/tree/main/Data%20Science" class="button" target="_blank" rel="noopener noreferrer">View Project</a></li>
+									<li><a href="https://github.com/ndahiro6/MyRepository/blob/main/Stats%20Analysis%20w%20Python/Final%20Exam%20Part%201.ipynb" class="button" target="_blank" rel="noopener noreferrer">View Project</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -160,13 +178,13 @@
 							<h2>Contact</h2>
 							<dl class="alt">
 								<dt>Address</dt>
-								<dd>4 East 32nd St&bull; Baltimore, MD 21218 &bull; USA</dd>
+								<dd>3501 Saint Paul Street&bull; Baltimore, MD 21218 &bull; USA</dd>
 								<dt>Email</dt>
-								<dd>inezastella6@gmail.coom</dd>
+								<dd>inezastella6@gmail.com</dd>
 							</dl>
 							<ul class="icons">
-								<li><a href="https://github.com/ndahiro6/ndahiro6.github.io/tree/main" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/stella-ineza-ndahiro-02b9431b7/" class="icon brands fa-linkedin alt"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://github.com/ndahiro6" class="icon brands fa-github alt" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/stella-ineza-ndahiro-02b9431b7/" class="icon brands fa-linkedin alt" target="_blank" rel="noopener noreferrer"><span class="label">Dribbble</span></a></li>
 							</ul>
 						</section>
 						
