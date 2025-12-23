@@ -21,21 +21,23 @@
 					<header id="header" class="alt">
 						
 						<h1>Stella's Portfolio</h1>
-						<p>Software Engineering, Sports Analytics, Data Science, and Computer Vision<br />
+						<p>Software Engineering, Sports Analytics, Data Science and Computer Vision<br />
 						 <a href="https://www.linkedin.com/in/stella-ineza-ndahiro-02b9431b7/" target="_blank" rel="noopener noreferrer">@stellandahiro</a> 
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#basketball">Basketball Stats App</a></li>
-							<li><a href="#win_pred">NBA Total Wins Prediction</a></li>
-							<li><a href="#first">Sports Analytics</a></li>
-							<li><a href="#second">Data Science</a></li>
-							
-						</ul>
-					</nav>
+				<button id="nav-toggle">Menu ☰</button>
+				<ul id="nav-list">
+					<!--<li><a href="#intro" class="active">Introduction</a></li>-->
+					<li><a href="#pitch-prediction">MLB Pitch Prediction Transformer</a></li>
+					<li><a href="#basketball">Basketball Stats App</a></li>
+					<li><a href="#win_pred">NBA Total Wins Prediction</a></li>
+					<li><a href="#first">Sports Analytics</a></li>
+					<li><a href="#second">Data Science</a></li>
+				</ul>
+				</nav>
+
 
 				<!-- Main -->
 					<div id="main">
@@ -48,7 +50,7 @@
 										<h2>A little bit about me...</h2>
 									</header>
 									<p>
-										I am a sports enthusiast with one year of experience in sports tech software engineering and data science.
+										I am a sports enthusiast with experience in sports tech software engineering and data science.
 										I earned a Bachelor’s degree from Johns Hopkins University in Chemical & Biomolecular Engineering and minored in Applied Mathematics & Statistics with a focus in Data Science.
 										Recently, I built computer vision and analytics models for football and lacrosse—such as a quarterback dropback detector and game-level athleticism metrics using clustering and Bayesian methods.
 										On the engineering side, I developed high‑performance data pipelines and APIs with FastAPI, PostgreSQL, and Polars, and shipped microservices with Docker, Kubernetes, and Redis for wearable‑data integrations.
@@ -60,6 +62,23 @@
 							</div>
 						</section>
 
+					<!-- Pitch Prediction Model -->
+					<section id="pitch-prediction" class="main special">
+						<header class="major">
+							<h2>MLB Pitch Prediction Transformer</h2>
+						</header>
+						<p>
+							Built a causally-masked Transformer model to predict whether the current pitch in a baseball game will be a fastball or non-fastball using only pre-pitch game context and sequencing behavior. Modeled innings as sequences with categorical and continuous features (count, base state, previous pitch info). Achieved about 70% validation accuracy, outperforming the naive baseline despite class imbalance (fastballs are 32% of all pitches).
+						</p>
+						<p><strong>Status:</strong> In progress.</p>
+						<footer class="major">
+							<ul class="actions special">
+								<li><a href="https://github.com/ndahiro6/pitch-prediction" class="button" target="_blank" rel="noopener noreferrer">View Project</a></li>
+							</ul>
+						</footer>
+					</section>
+
+
 					<!-- Basketball Stats App -->
 					<section id="basketball" class="main special">
 						<header class="major">
@@ -68,10 +87,10 @@
 						<p>
 							A work-in-progress personal app to track and compare player statistics. The backend is written in Python using FastAPI for a fast, typed web API, SQLAlchemy for ORM models, and Alembic for database migrations. PostgreSQL is the primary datastore, with Docker and pgAdmin used to run and manage a reliable local environment. The frontend is built with React and TypeScript to enable a type-safe, component-driven UI. The repo also includes backend tests and helper scripts for local startup.
 						</p>
-						<p><strong>Status:</strong> In progress — not yet completed.</p>
+						<p><strong>Status:</strong> In progress.</p>
 						<footer class="major">
 							<ul class="actions special">
-								<li><a href="https://github.com/ndahiro6/basketball-stats" class="button" target="_blank" rel="noopener noreferrer">View Repo</a></li>
+								<li><a href="https://github.com/ndahiro6/basketball-stats" class="button" target="_blank" rel="noopener noreferrer">View Project</a></li>
 							</ul>
 						</footer>
 					</section>
@@ -90,7 +109,7 @@
 						</div>
 						<footer class="major">
 							<ul class="actions special">
-								<li><a href="https://github.com/ndahiro6/nba-total-wins-pred" class="button" target="_blank" rel="noopener noreferrer">View Repo</a></li>
+								<li><a href="https://github.com/ndahiro6/nba-total-wins-pred" class="button" target="_blank" rel="noopener noreferrer">View Project</a></li>
 							</ul>
 						</footer>
 					</section>
